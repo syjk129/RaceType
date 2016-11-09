@@ -19,29 +19,37 @@ class LoginController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         self.hideKeyboardWhenTappedAround()
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if FIRAuth.auth()?.currentUser != nil {
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "Home")
+            self.present(vc!, animated: false, completion: nil)
+        }
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
 
-    @IBAction func Register(sender: AnyObject) {
-        let vc = self.storyboard?.instantiateViewControllerWithIdentifier("Register")
-        self.presentViewController(vc!, animated: false, completion: nil)
+    @IBAction func Register(_ sender: AnyObject) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "Register")
+        self.present(vc!, animated: false, completion: nil)
     }
     
-    @IBAction func Login(sender: AnyObject) {
-        if !Username.hasText(){
+    @IBAction func Login(_ sender: AnyObject) {
+        if !Username.hasText{
             print("Username cannot be empty")
         }
-        else if !Password.hasText(){
+        else if !Password.hasText{
             print("Password cannot be empty")
         }
         else{
-            FIRAuth.auth()?.signInWithEmail(Username.text!, password: Password.text!, completion: {
+            FIRAuth.auth()?.signIn(withEmail: Username.text!, password: Password.text!, completion: {
                 user, error in
                 if error == nil{
-                    let vc = self.storyboard?.instantiateViewControllerWithIdentifier("Home")
-                    self.presentViewController(vc!, animated: false, completion: nil)
+//                    thisUser = user
+                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "Home")
+                    self.present(vc!, animated: false, completion: nil)
                 }
                 else{
                     print("Username and Password combination does not exist")

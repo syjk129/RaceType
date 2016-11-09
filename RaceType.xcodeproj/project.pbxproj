@@ -238,15 +238,18 @@
 					755337141D0269920075B14C = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = RM4PX252WN;
+						LastSwiftMigration = 0800;
 					};
 					755337281D0269920075B14C = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = RM4PX252WN;
+						LastSwiftMigration = 0800;
 						TestTargetID = 755337141D0269920075B14C;
 					};
 					755337331D0269920075B14C = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = RM4PX252WN;
+						LastSwiftMigration = 0800;
 						TestTargetID = 755337141D0269920075B14C;
 					};
 				};
@@ -504,6 +507,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.trisk.RaceType;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -516,6 +520,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.trisk.RaceType;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -527,6 +532,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.trisk.RaceTypeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RaceType.app/RaceType";
 			};
 			name = Debug;
@@ -539,6 +545,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.trisk.RaceTypeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RaceType.app/RaceType";
 			};
 			name = Release;
@@ -550,6 +557,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.trisk.RaceTypeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = RaceType;
 			};
 			name = Debug;
@@ -561,6 +569,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.trisk.RaceTypeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = RaceType;
 			};
 			name = Release;
